@@ -29,13 +29,20 @@
 </div>
 </template>
 
+<script>
+export default {
+  name: 'DefaultPage',
+}
+</script>
+
+
 <style lang="scss">
 // Store page content
-@import "../scss/_base.normalize.scss";
-@import "../scss/_components.content.scss";
-@import "../scss/_settings.responsive.scss";
-@import "../scss/_settings.variables.scss";
-@import "../scss/style.scss";
+@import "../assets/scss/_base.normalize.scss";
+@import "../assets/scss/_components.content.scss";
+@import "../assets/scss/_settings.responsive.scss";
+@import "../assets/scss/_settings.variables.scss";
+@import "../assets/scss/style.scss";
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
