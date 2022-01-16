@@ -26,9 +26,9 @@ export default {
   methods: {
   getCases(cases) {
   if (cases > 10000){
-    return "name_en Danger!";
+    return "Danger!";
   } else {
-    return "this.name_en Safe!";
+    return "Safe!";
   }
   },
   },
