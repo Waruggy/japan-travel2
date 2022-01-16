@@ -21,6 +21,9 @@
               <li class="nav-item">
                 <nuxt-link class="nav-link" to="/About">About</nuxt-link>
               </li>
+              <li class="nav-item">
+                <nuxt-link class="nav-link" to="/Api">Api</nuxt-link>
+              </li>
             </ul>
           </div>
       </nav>
