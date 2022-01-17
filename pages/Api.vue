@@ -51,7 +51,7 @@
      </div>
   </div>
   <div class="col-md-5">
-   <CovidCases v-if="covid" :covid="covid" />
+   <CovidCases v-if="covidData" :prefecture="covidData" />
  </div>
 </div>
 </div>
@@ -64,17 +64,15 @@ import CovidCases from '../components/CovidCases.vue'
 export default {
   name: 'apiPage',
   async fetch() {
-  this.covid = await fetch(
+  this.covidData = await fetch(
   "https://covid19-japan-web-api.now.sh/api//v1/prefectures"
-  ).then((res) => res.json());
+  ).then((res) => res.json()); 
 },
   components: { CovidCases },
   data() {
     return {
-      value: "",
-      context: null,
       show: true,
-      covid: undefined,
+      covidData: undefined,
       submitted: false,
     };
   },
@@ -82,7 +80,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss">
+<style lang="scss" scoped>
 @import "~/node_modules/bootstrap/scss/bootstrap.scss";
 @import "../assets/scss/_base.normalize.scss";
 @import "../assets/scss/_components.content.scss";

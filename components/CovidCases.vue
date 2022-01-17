@@ -3,8 +3,10 @@
     <h1 class="m">Covid Cases of Japanese Prefectures</h1>
     <ul>
       <li class="covid">
-        <b>{{ name_en }}:</b>
-        {{getCases(cases)}}
+      <div v-for="element in prefecture" v-bind:key="element.id">
+        <b>{{ element.name_en }}:</b>
+        {{getCases(element.cases)}}
+      </div>
       </li>
     </ul>
   </div>
@@ -20,6 +22,7 @@ export default {
   // Set component props
   props: {
     prefecture: {
+      type: Array,
       required: true,
     },
   },
@@ -36,9 +39,9 @@ export default {
 </script>
 
 
-<style lang="scss">
+<style lang="scss" scoped>
 // Store page content
-.covidcases {
+.covid {
   display: block;
 }
 @import "~/node_modules/bootstrap/scss/bootstrap.scss";
