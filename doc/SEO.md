@@ -1,0 +1,5 @@
+1.I learned that a search intent is very helpful for people to access your site. Having a better result from the search engine will have more people use your site. The four common types of searches that I read are informational, navigational, commercial, and transactional. Sure I already know that Google is a really respected search site, but their capabilities are still very impressive. Trying to have a good connection with the search engines will really help finding users.
+
+2.I think my website would be under the commercial search intent, since man people want to travel to Japan. Japan Travel will let people know that my site is there to help them know better about Japan. So they can be more prepared when traveling there.
+
+I intend to make my page have a more specific title for what information I will give. I learned that the better the title you have for people to understand the higher the search ranking you'll have. Higher search ranking will give you a better chance for people to use your site.

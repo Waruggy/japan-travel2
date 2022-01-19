@@ -3,7 +3,7 @@
     <div class="container">
       <!-- Header -->
       <div class="row header">
-          <h1>Japan Travel</h1>
+          <h1>{{title}}</h1>
       </div>
       <!-- Navbar with routes to other pages -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -35,7 +35,25 @@
 <script>
 export default {
   name: 'DefaultPage',
-}
+    data() {
+      return {
+        title: 'Japan Travel'
+      }
+    },
+    head() {
+      return {
+        title: this.title,
+        meta: [
+          // hid is used as unique identifier. Do not use `vmid` for it as it will not work
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'My custom description'
+          }
+        ]
+      }
+    }
+  }
 </script>
 
 
